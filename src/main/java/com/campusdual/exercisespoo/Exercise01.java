@@ -7,20 +7,19 @@ public class Exercise01 {
         System.out.println(10 / 2);
         String cnv = "200";
         int cnvInt = Integer.parseInt(cnv);
-        cnv = cnv +1;
-        cnvInt = cnvInt +1;
+        cnv = cnv + 1;
+        cnvInt = cnvInt + 1;
         String cnvStr = String.valueOf(cnvInt);
         char cnvChar = cnvStr.charAt(2);
 
-        int i= 1;
-        String iStr = String.valueof (i);
+        int i = 1;
+        String iStr = String.valueOf(i);
         Double iDouble = Double.valueOf(iStr);
         String iDStr = String.valueOf(iDouble);
-        System.out.println(Boolean.valueOf(s: "true"));
+        System.out.println(Boolean.valueOf("true"));
 
 
-
-      //  1 = "1" = 1.0 = true = "true"
+        //  1 = "1" = 1.0 = true = "true"
     }
 
 }
