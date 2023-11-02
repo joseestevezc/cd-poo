@@ -21,17 +21,17 @@ public class Cat {
     }
 
 
-    public static String changeColour() {
-        colour = Utils.string("Introduce el color del pelo: ");
+    public static String changeColour(String color) {
+       colour = color;
         return colour;
     }
 
-    public void changeEyeColour() {
-        this.eyeColour = Utils.string("Introduce el color de ojos: ");
+    public void changeEyeColour(String eyeColour) {
+        this.eyeColour = eyeColour;
     }
 
-    public static void changeAge() {
-        age = Utils.integer("Introduce la edad del gato: ");
+    public static void changeAge(int edad) {
+        age = edad;
     }
 
     public int obtenerAge() {
@@ -56,7 +56,7 @@ public class Cat {
         System.out.println("Color de los ojos: " + this.eyeColour + "     Tipo de pelo: " + this.hair);
         System.out.println("Color del pelo: " + colour);
         isCastrated();
-        System.out.println("----");
+
     }
 
     public static void main(String[] args) {
@@ -66,10 +66,11 @@ public class Cat {
 
         gatoGrizi.chageCastrated();
         gatoFiona.chageCastrated();
-        Cat.changeAge();
-        Cat.changeAge();
-        gatoNiño.changeEyeColour();
-        System.out.println("---------------");
+        Cat.changeAge(10);
+        Cat.changeAge(7);
+        Cat.changeColour("green");
+        Cat.changeColour("brown");
+        gatoNiño.changeEyeColour("blue");
         gatoGrizi.catDetails();
         gatoFiona.catDetails();
         gatoNiño.catDetails();
