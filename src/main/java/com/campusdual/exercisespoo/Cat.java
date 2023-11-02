@@ -56,7 +56,7 @@ public class Cat {
         System.out.println("Color de los ojos: " + this.eyeColour + "     Tipo de pelo: " + this.hair);
         System.out.println("Color del pelo: " + colour);
         isCastrated();
-        System.out.println("--------------------------------------------------------------------------------------");
+        System.out.println("----");
     }
 
     public static void main(String[] args) {
