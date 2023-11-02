@@ -66,12 +66,8 @@ public class Cat {
 
         gatoGrizi.chageCastrated();
         gatoFiona.chageCastrated();
-        gatoGrizi.colour = Cat.changeColour();
-        gatoFiona.colour = Cat.changeColour();
         Cat.changeAge();
-        gatoGrizi.age= gatoGrizi.obtenerAge();
         Cat.changeAge();
-        gatoFiona.age=gatoFiona.obtenerAge();
         gatoNiño.changeEyeColour();
         System.out.println("---------------");
         gatoGrizi.catDetails();
