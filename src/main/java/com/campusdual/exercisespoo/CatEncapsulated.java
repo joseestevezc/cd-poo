@@ -51,17 +51,14 @@ public class CatEncapsulated {
         return age;
     }
 
-    public void setAge() {
-        int age = Utils.integer("Introduzca la edad del gato: ");
+    public void setAge(int age) {
 
         if (age > 0) {
             this.age = age;
         } else {
-            while (age < 0) {
+
                 System.out.println("La edad introducida debe ser un número positivo.");
-                age = Utils.integer("Introduzca la edad del gato: ");
-            }
-            this.age = age;
+
         }
     }
 
@@ -78,8 +75,7 @@ public class CatEncapsulated {
         return colour;
     }
 
-    public void setColour() {
-        String colour = Utils.string("Introduzca el color de pelo de  " + this.name + " :");
+    public void setColour(String colour) {
         this.colour = colour;
         System.out.println("El color de pelo de " + this.name + " ha sido cambiado a " + this.colour);
     }
@@ -101,8 +97,7 @@ public class CatEncapsulated {
         return eyeColour;
     }
 
-    public void setEyeColour() {
-        String eyeColour = Utils.string("Introduzca el color de ojos de " + this.name + " :");
+    public void setEyeColour(String eyeColour) {
         this.eyeColour = eyeColour;
         System.out.println("El color de ojos de " + this.name + " ha sido cambiado a " + this.eyeColour);
     }
@@ -113,7 +108,6 @@ public class CatEncapsulated {
         System.out.println("Color de los ojos: " + this.eyeColour + "     Tipo de pelo: " + this.hair);
         System.out.println("Color del pelo: " + this.colour + "     Está: " + isCastrated());
 
-        System.out.println("--------------------------------------------------------------------------------------");
     }
 
     public static void main(String[] args) {
@@ -126,11 +120,10 @@ public class CatEncapsulated {
 
         gatoGrizi.setCastrated();
         gatoFiona.setCastrated();
-        gatoGrizi.setColour();
-        gatoFiona.setColour();
-        gatoNiño.setEyeColour();
-        gatoNiño.setAge();
-        System.out.println("--------------------------------------------------------------------------------------");
+        gatoGrizi.setColour("black");
+        gatoFiona.setColour("yellow");
+        gatoNiño.setEyeColour("blue");
+        gatoNiño.setAge(8);
         gatoGrizi.catEncapsulatedDetails();
         gatoFiona.catEncapsulatedDetails();
         gatoNiño.catEncapsulatedDetails();
